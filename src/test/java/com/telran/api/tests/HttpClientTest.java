@@ -64,7 +64,7 @@ public class HttpClientTest {
 
         Gson gson = new Gson();
 
-        Response response = Request.Post(" ")
+        Response response = Request.Post("https://contacts-telran.herokuapp.com/api/login")
                 .bodyString(gson.toJson(requestDto),APPLICATION_JSON)
                 .execute();
 
